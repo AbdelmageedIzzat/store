@@ -1,0 +1,481 @@
+[file name]: pages.css
+[file content begin]
+/* الصفحة الرئيسية - مبسطة */
+.hero-section {
+    padding: var(--space-xl) 0;
+    background: linear-gradient(135deg, #4361EE 0%, #3A0CA3 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 1.6rem;
+    margin-bottom: var(--space-sm);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: var(--space-lg);
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* قسم المميزات - مبسط */
+.features-section {
+    background: var(--light);
+    padding: var(--space-lg) 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-md);
+}
+
+.feature-card {
+    text-align: center;
+    padding: var(--space-md);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-sm);
+    font-size: 1.2rem;
+    color: white;
+}
+
+.feature-title {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.feature-description {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
+
+/* قسم العروض - محسن للهاتف */
+.offers-section {
+    position: relative;
+    padding: var(--space-lg) 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.offers-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+}
+
+/* صفحة الفئة - مبسطة */
+.category-header {
+    background: white;
+    padding: var(--space-lg) 0;
+    margin-bottom: var(--space-md);
+    border-bottom: 1px solid var(--gray);
+}
+
+.category-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.category-title-section h1 {
+    margin-bottom: var(--space-xs);
+    font-size: 1.3rem;
+}
+
+.category-description {
+    color: var(--text-light);
+    max-width: 100%;
+    font-size: 0.85rem;
+}
+
+/* صفحة المنتج - مبسطة للهاتف */
+.product-detail-section {
+    padding: var(--space-lg) 0;
+}
+
+.product-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.product-gallery {
+    background: white;
+    border-radius: var(--radius);
+    padding: var(--space-md);
+    box-shadow: var(--shadow);
+}
+
+.product-image-large {
+    height: 250px;
+    background: var(--light);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-md);
+    font-size: 4rem;
+}
+
+.product-thumbnails {
+    display: flex;
+    gap: var(--space-xs);
+    overflow-x: auto;
+}
+
+.product-thumbnail {
+    width: 60px;
+    height: 60px;
+    background: var(--light);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.product-thumbnail:hover,
+.product-thumbnail.active {
+    border: 2px solid var(--primary);
+}
+
+.product-info-detail {
+    background: white;
+    border-radius: var(--radius);
+    padding: var(--space-md);
+    box-shadow: var(--shadow);
+}
+
+.product-meta {
+    display: flex;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.product-stock {
+    background: var(--success);
+    color: white;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.product-sku {
+    color: var(--text-light);
+    font-size: 0.7rem;
+}
+
+.product-price-detail {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+}
+
+.price-main {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.price-old-detail {
+    font-size: 1rem;
+    color: var(--text-light);
+    text-decoration: line-through;
+}
+
+.discount-detail {
+    background: var(--secondary);
+    color: white;
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.product-actions-detail {
+    display: flex;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    flex-wrap: wrap;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    background: var(--light);
+    padding: 6px;
+    border-radius: var(--radius);
+}
+
+.quantity-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: white;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.quantity-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.quantity-display {
+    width: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* صفحة الدفع - مبسطة */
+.checkout-section {
+    padding: var(--space-lg) 0;
+}
+
+.checkout-steps {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    background: var(--gray);
+    color: var(--text-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.step.active .step-number {
+    background: var(--primary);
+    color: white;
+}
+
+.step.completed .step-number {
+    background: var(--success);
+    color: white;
+}
+
+.step-line {
+    width: 50px;
+    height: 2px;
+    background: var(--gray);
+    margin-top: 16px;
+}
+
+.step.active .step-line {
+    background: var(--primary);
+}
+
+.step.completed .step-line {
+    background: var(--success);
+}
+
+.checkout-form-container {
+    background: white;
+    border-radius: var(--radius);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow);
+}
+
+/* تحسينات للهاتف */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 25px 0;
+        margin-top: 0;
+    }
+    
+    .hero-title {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 250px;
+        padding: 12px;
+    }
+    
+    .features-section {
+        padding: 20px 0;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .feature-card {
+        padding: 15px 10px;
+    }
+    
+    .feature-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+    
+    .feature-title {
+        font-size: 0.85rem;
+    }
+    
+    .feature-description {
+        font-size: 0.75rem;
+    }
+    
+    .offers-section {
+        padding: 20px 0;
+    }
+    
+    .offers-slider {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .category-header {
+        padding: 20px 0;
+    }
+    
+    .category-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .category-title-section h1 {
+        font-size: 1.2rem;
+    }
+    
+    .product-image-large {
+        height: 200px;
+        font-size: 3rem;
+    }
+    
+    .product-thumbnail {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    
+    .price-main {
+        font-size: 1.5rem;
+    }
+    
+    .checkout-steps {
+        gap: 10px;
+    }
+    
+    .step-line {
+        width: 30px;
+    }
+    
+    .checkout-form-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .product-actions-detail {
+        flex-direction: column;
+    }
+    
+    .product-actions-detail .btn {
+        width: 100%;
+    }
+    
+    .step-line {
+        width: 20px;
+    }
+}
+[file content end]

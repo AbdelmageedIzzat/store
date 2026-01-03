@@ -1,0 +1,25 @@
+[file name]: package.json
+[file content begin]
+{
+  "name": "nexus-store",
+  "version": "1.0.0",
+  "description": "متجر إلكتروني عصري مبني للهواتف المحمولة",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "dev": "live-server --port=3000",
+    "build": "echo 'بناء متجر Nexus'"
+  },
+  "keywords": [
+    "متجر",
+    "تسوق",
+    "هاتف",
+    "محمول",
+    "عربي"
+  ],
+  "author": "Nexus Team",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
+[file content end]

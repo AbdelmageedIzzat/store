@@ -1,0 +1,137 @@
+[file name]: variables.css
+[file content begin]
+:root {
+    /* الألوان الأساسية */
+    --primary: #4361EE;
+    --primary-light: #4895EF;
+    --primary-dark: #3A0CA3;
+    --secondary: #F72585;
+    --secondary-light: #B5179E;
+    --accent: #4CC9F0;
+    --accent-light: #5CE1E6;
+    --dark: #1D3557;
+    --dark-light: #2D4059;
+    --light: #F8F9FA;
+    --gray: #E9ECEF;
+    --gray-dark: #DEE2E6;
+    
+    /* الألوان الجديدة */
+    --success: #06D6A0;
+    --warning: #FFD166;
+    --danger: #EF476F;
+    --info: #118AB2;
+    --purple: #7209B7;
+    --orange: #FB5607;
+    
+    /* ألوان النصوص */
+    --text: #2B2D42;
+    --text-light: #8D99AE;
+    --text-lighter: #ADB5BD;
+    
+    /* الظلال - مخففة للهاتف */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 8px 30px rgba(0, 0, 0, 0.12);
+    
+    /* الزوايا - مبسطة */
+    --radius-sm: 6px;
+    --radius: 8px;
+    --radius-md: 10px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 999px;
+    
+    /* التحولات - أسرع للهاتف */
+    --transition: all 0.2s ease;
+    --transition-fast: all 0.1s ease;
+    --transition-slow: all 0.3s ease;
+    
+    /* الأبعاد - مصغرة للهاتف */
+    --header-height: 60px;
+    --navbar-height: 55px;
+    --sidebar-width: 100%;
+    --max-width: 100%;
+    
+    /* أحجام الخطوط - مصغرة للهاتف */
+    --font-xs: 0.7rem;     /* 11px */
+    --font-sm: 0.8rem;    /* 13px */
+    --font-base: 0.9rem;  /* 14px */
+    --font-lg: 1rem;      /* 16px */
+    --font-xl: 1.1rem;    /* 18px */
+    --font-2xl: 1.3rem;   /* 21px */
+    --font-3xl: 1.5rem;   /* 24px */
+    --font-4xl: 1.8rem;   /* 29px */
+    --font-5xl: 2.2rem;   /* 35px */
+    
+    /* أحجام الأيقونات - مصغرة */
+    --icon-xs: 0.8rem;
+    --icon-sm: 0.9rem;
+    --icon-base: 1rem;
+    --icon-lg: 1.2rem;
+    --icon-xl: 1.5rem;
+    --icon-2xl: 1.8rem;
+    --icon-3xl: 2.2rem;
+    
+    /* التباعد - مصغر للهاتف */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 0.75rem;
+    --space-lg: 1rem;
+    --space-xl: 1.25rem;
+    --space-2xl: 1.5rem;
+    --space-3xl: 2rem;
+}
+
+/* أنماط الخطوط */
+@font-face {
+    font-family: 'Cairo';
+    src: url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+    font-display: swap;
+}
+
+/* تحسينات عامة للهاتف */
+@media (max-width: 768px) {
+    :root {
+        --header-height: 55px;
+        --navbar-height: 50px;
+        --space-md: 0.5rem;
+        --space-lg: 0.75rem;
+        --space-xl: 1rem;
+    }
+}
+
+/* التمرير السلس */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #f8f9fa;
+    color: var(--text);
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+body.modal-open,
+body.cart-open {
+    overflow: hidden;
+}
+
+/* تحسينات للهاتف */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    body {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+[file content end]
